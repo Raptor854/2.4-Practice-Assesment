@@ -1,0 +1,188 @@
+@charset "utf-8";
+/* CSS Document */
+
+:root {
+	--block_bg_color: #52AACF;
+	--block_txt_color: #AC4036;
+	--block_accent_color: #C9C5B6;
+}
+
+body {
+    width: 100%;
+    margin: auto;
+	background-color: #FFF;
+}
+
+/*---- Page Content ----*/
+
+.main_content {
+    margin: auto;
+    color: #111111;
+    font-family: 'Open Sans', sans-serif;
+	font-size: medium;
+    text-align: justify;
+    padding-bottom: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    color: #111111;
+	font-weight: bold
+}
+
+.main_content p {
+	text-align: left;
+}
+
+.main_content img {
+    border-radius: 5px;
+}
+
+/*---- NavBar ----*/
+
+nav {
+	width: 100%;
+	display: block;
+	background-color:  var(--block_bg_color);
+	color: var(--block_txt_color);
+}
+
+nav a {
+	color: var(--block_txt_color);
+	text-decoration: none;
+}
+
+nav .nav_desktop {
+	height: 100px;
+}
+
+nav .nav_desktop img {
+	height: 85px;
+	margin: 10px 0 0 auto;
+}
+
+
+nav .nav_mobile {
+	height: 48px;
+}
+
+.spacer {
+	display: block;
+	width: 100%;
+	height: 20px;
+}
+
+/*---- Footer ----*/
+
+footer {
+	background-color: var(--block_bg_color);
+	color: var(--block_txt_color);
+	width: 100%;
+	display: block;
+	min-height: 100px;
+}
+
+footer a {
+	color: var(--block_txt_color);
+	font-weight: 550;
+	text-decoration: none;
+}
+footer a:hover {
+	color: var(--block_accent_color)
+}
+
+footer .footer_content {
+	display: block;
+	margin: 0 auto;
+	padding: 10px 0 30px;
+	height: auto;
+}
+
+.footer_content_container {
+	position: sticky;
+	width: 100%;
+	display: block;
+	margin: 0;
+	bottom: 0;
+	padding: 10px 0;
+	background-color: var(--block_bg_color);
+	color: var(--block_txt_color);
+	box-shadow: 0 -2px 2px 0 #bbb;
+}
+
+.footer_about {
+	height: 35px;
+	margin: auto;
+	padding: 10px;
+	border: 3px solid var(--block_accent_color);
+}
+.footer_about #facebook_logo {
+	float: right;
+	height: 25px;
+	padding: 5px;
+}
+
+#facebook_logo {
+	filter: invert(0%);
+	-webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -ms-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+}
+
+.footer_about #facebook_logo:hover {
+	filter: invert(100%);
+}
+
+footer .footer_content .footer_nav_links {
+	width: 100%;
+	display: block;
+	margin: 0;
+	text-align: center;
+}
+
+/*---- Scaling ----*/
+/*--- Width ---*/
+/*-- Mobile --*/
+.main_content, .footer_content, .footer_about {
+    width: 90%;
+}
+.nav_mobile {
+	display: block;
+}
+.nav_desktop {
+	display: none;
+}
+
+h1 {
+    font-size: 25px;
+}
+
+/*-- Tablets --*/
+@media only screen and (min-width: 600px) {
+    .main_content, .footer_content, .footer_about {
+        width: 75%;
+    }
+}
+
+/*-- Laptop & Desktop --*/
+@media only screen and (min-width: 768px) {
+    .main_content, .footer_content, .footer_about {
+        width: 60%;
+    }
+	h1 {
+		font-size: 35px;
+	}
+}
+
+@media only screen and (min-width: 900px) {
+    .nav_mobile {
+        display: none;
+    }
+    .nav_desktop {
+        display: block;
+		width: 60%;
+		margin-left: 20%;
+    }
+}

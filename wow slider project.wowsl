@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VisualLightBox>
+    <Gallery version="2.5">
+        <Settings>
+            <AppName>WOW Slider</AppName>
+            <AppUrlS>WOWSlider.com</AppUrlS>
+            <AppVersion>9.0</AppVersion>
+            <AutoPlay>true</AutoPlay>
+            <AutoPlayVideo>false</AutoPlayVideo>
+            <Captions>false</Captions>
+            <CaptionsEffect>parallax</CaptionsEffect>
+            <Controls>false</Controls>
+            <FontSize>26</FontSize>
+            <FullScreen>false</FullScreen>
+            <GalleryName>wow slider project</GalleryName>
+            <GallerySuffix>0</GallerySuffix>
+            <HtmlCharset>UTF-8</HtmlCharset>
+            <ImageAspectRatio>true</ImageAspectRatio>
+            <ImageEffect>parallax</ImageEffect>
+            <ImageFillColor>#000000</ImageFillColor>
+            <ImageHeight>720</ImageHeight>
+            <ImageQuality>90</ImageQuality>
+            <ImageShrink2>false</ImageShrink2>
+            <ImageStretch>true</ImageStretch>
+            <ImageTemplate>C:/Program Files (x86)/WOW Slider/templates/backgnd/megalopolis/</ImageTemplate>
+            <ImageTemplateName>Megalopolis</ImageTemplateName>
+            <ImageWidth>1280</ImageWidth>
+            <Images>true</Images>
+            <JoomlaType>2.5</JoomlaType>
+            <OneLoop>false</OneLoop>
+            <OrderRandom>false</OrderRandom>
+            <PlayPause>false</PlayPause>
+            <Preloader>false</Preloader>
+            <PublishFileName>C:/Users/canad/Documents/School/Year 12/12DGT/WebDesign/Practice Assesment/website/index.html</PublishFileName>
+            <PublishIndex>index.html</PublishIndex>
+            <PublishPath>C:/Users/canad/Documents/School/Year 12/12DGT/WebDesign/Practice Assesment/website</PublishPath>
+            <PublishPreview>true</PublishPreview>
+            <PublishType>page</PublishType>
+            <RelativePath>false</RelativePath>
+            <ShowBullets>1</ShowBullets>
+            <ShowControls>false</ShowControls>
+            <ShowTooltips>0</ShowTooltips>
+            <SizeStyle>2</SizeStyle>
+            <SlideshowDelay>20</SlideshowDelay>
+            <SlideshowDuration>20</SlideshowDuration>
+            <SoundEnable>0</SoundEnable>
+            <SoundFileName></SoundFileName>
+            <StopOnHover>false</StopOnHover>
+            <SwipeSupport>2</SwipeSupport>
+            <TemplateColor>#ffffff</TemplateColor>
+            <TemplateFont>Tenor Sans</TemplateFont>
+            <TemplateName>megalopolis</TemplateName>
+            <ThumbAlign>bottom</ThumbAlign>
+            <ThumbFormat>jpg</ThumbFormat>
+            <ThumbHeight>48</ThumbHeight>
+            <ThumbQuality>90</ThumbQuality>
+            <ThumbWidth>0</ThumbWidth>
+            <Thumbnails>false</Thumbnails>
+            <TooltipPos>bottom</TooltipPos>
+            <noFrame>0</noFrame>
+        </Settings>
+        <Images RelativePath="false">
+            <Image>
+                <url>C:/Users/canad/Documents/School/Year 12/12DGT/WebDesign/Practice Assesment/website/images/bmx_race_2.jpg</url>
+                <title>bmx_race_2</title>
+                <filesize>423921</filesize>
+            </Image>
+            <Image>
+                <url>C:/Users/canad/Documents/School/Year 12/12DGT/WebDesign/Practice Assesment/website/images/bmx_rider_cornering_1.jpg</url>
+                <title>bmx_rider_cornering_1</title>
+                <filesize>371713</filesize>
+            </Image>
+            <Image>
+                <url>C:/Users/canad/Documents/School/Year 12/12DGT/WebDesign/Practice Assesment/website/images/mother_helping.jpg</url>
+                <title>mother_helping</title>
+                <filesize>138780</filesize>
+            </Image>
+            <Image>
+                <url>C:/Users/canad/Documents/School/Year 12/12DGT/WebDesign/Practice Assesment/website/images/rider_under_sign.jpg</url>
+                <title>rider_under_sign</title>
+                <filesize>195024</filesize>
+            </Image>
+            <Image>
+                <url>C:/Users/canad/Documents/School/Year 12/12DGT/WebDesign/Practice Assesment/website/images/young_kid_full_face.jpg</url>
+                <title>young_kid_full_face</title>
+                <filesize>197116</filesize>
+            </Image>
+        </Images>
+    </Gallery>
+</VisualLightBox>

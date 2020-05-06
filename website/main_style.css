@@ -48,6 +48,7 @@ nav {
 	display: block;
 	background-color:  var(--block_bg_color);
 	color: var(--block_txt_color);
+	overflow: hidden;
 }
 
 nav a {
@@ -69,7 +70,29 @@ nav .nav_desktop {
 
 nav .nav_desktop img {
 	height: 70px;
-	margin: 15px 0 0 auto;
+	margin: 20px 0 0 auto;
+}
+
+nav .nav_desktop a {
+	float: right;
+	padding: 15px 10px;
+    font-size: 20px;
+	margin-top: 23.5px;
+	color: var(--block_accent_txt_color);
+	background-color: var(--block_accent_color);
+	font-weight: 500;
+}
+nav .nav_desktop a:hover {
+	color: var(--block_txt_color);
+	background-color: var(--block_alt_accent_color);
+}
+
+nav .nav_desktop a:last-of-type {
+	border-radius: 8px 0 0 8px;
+}
+
+nav .nav_desktop a:first-of-type {
+	border-radius: 0 8px 8px 0;
 }
 
 /*--- Mobile ---*/
@@ -173,6 +196,8 @@ footer .footer_content {
 }
 
 #facebook_logo {
+	-webkit-filter: invert(100%);
+	-o-filter: invert(100%);
 	filter: invert(100%);
 	-webkit-transition: all 500ms ease-in-out;
     -moz-transition: all 500ms ease-in-out;
@@ -182,6 +207,8 @@ footer .footer_content {
 }
 
 .footer_about #facebook_logo:hover {
+	-webkit-filter: invert(80%);
+	-o-filter: invert(80%);
 	filter: invert(80%);
 	
 }

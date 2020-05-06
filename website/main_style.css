@@ -3,8 +3,10 @@
 
 :root {
 	--block_bg_color: #52AACF;
-	--block_txt_color: #AC4036;
-	--block_accent_color: #C9C5B6;
+	--block_txt_color: #FFF;
+	--block_accent_color: #ccc;
+	--block_alt_accent_color: #888;
+	--block_accent_txt_color: #52AACF;
 }
 
 body {
@@ -22,6 +24,7 @@ body {
 	font-size: medium;
     text-align: justify;
     padding-bottom: 0;
+	min-height: 400px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -52,18 +55,58 @@ nav a {
 	text-decoration: none;
 }
 
+nav a:hover {
+	color: var(--block_txt_color);
+	background-color: var(--block_alt_accent_color);
+	text-decoration: none;
+}
+
+/*--- Desktop ---*/
+
 nav .nav_desktop {
 	height: 100px;
 }
 
 nav .nav_desktop img {
-	height: 85px;
-	margin: 10px 0 0 auto;
+	height: 70px;
+	margin: 15px 0 0 auto;
 }
 
+/*--- Mobile ---*/
 
 nav .nav_mobile {
 	height: 48px;
+}
+
+nav .nav_mobile #mobile_links {
+    display: none;
+}
+
+nav .nav_mobile a {
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+nav .nav_mobile a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+	color: var(--block_accent_txt_color);
+	background-color: var(--block_accent_color);
+}
+nav .nav_mobile a.icon:hover {
+	color: var(--block_txt_color);
+	background-color: var(--block_alt_accent_color);
+}
+
+nav .nav_mobile img {
+    height: 28px;
+    width: auto;
+    padding: 8px;
+    margin-left: 5px;
 }
 
 .spacer {
@@ -96,6 +139,7 @@ footer .footer_content {
 	margin: 0 auto;
 	padding: 10px 0 30px;
 	height: auto;
+	text-align: center;
 }
 
 .footer_content_container {
@@ -111,19 +155,25 @@ footer .footer_content {
 }
 
 .footer_about {
-	height: 35px;
+	height: 50px;
 	margin: auto;
-	padding: 10px;
+	padding: 10px 10px 10px;
 	border: 3px solid var(--block_accent_color);
 }
+
+.footer_about p {
+	margin: 0;
+	padding: 0;
+}
+
 .footer_about #facebook_logo {
 	float: right;
-	height: 25px;
-	padding: 5px;
+	height: 35px;
+	padding: 7.5px 5px;
 }
 
 #facebook_logo {
-	filter: invert(0%);
+	filter: invert(100%);
 	-webkit-transition: all 500ms ease-in-out;
     -moz-transition: all 500ms ease-in-out;
     -ms-transition: all 500ms ease-in-out;
@@ -132,7 +182,8 @@ footer .footer_content {
 }
 
 .footer_about #facebook_logo:hover {
-	filter: invert(100%);
+	filter: invert(80%);
+	
 }
 
 footer .footer_content .footer_nav_links {

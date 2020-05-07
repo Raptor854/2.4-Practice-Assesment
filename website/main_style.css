@@ -41,6 +41,26 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 5px;
 }
 
+/*---- Parallax ----*/
+
+[class^="parallax"] {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: scroll;
+}
+
+.parallax_results {
+	background-image: url("images/gallery/bmx_race_1.jpg");
+}
+
+.parallax_gallery {
+	background-image: url("images/gallery/bmx_race_corner_0.jpg");
+}
+
+.parallax_our_track {
+	background-image: url("images/gallery/rider_under_sign.jpg")
+}
+
 /*---- NavBar ----*/
 
 nav {
@@ -285,4 +305,88 @@ h1 {
 		width: 60%;
 		margin-left: 20%;
     }
+
+	/* 4k */
+	@media only screen and (max-height: 2160px) {
+		[class^="parallax"] {
+			height: 1860px;
+		}
+	}
+
+	/* 1440p */
+	@media only screen and (max-height: 1440px) {
+		[class^="parallax"] {
+			height: 1140px;
+		}
+	}
+
+	/* 1080p */
+	@media only screen and (max-height: 1080px) {
+		[class^="parallax"] {
+			height: 780px;
+		}
+	}
+}
+
+@media only screen and (max-height: 1600px) {
+	[class^="parallax"] {
+		height: 1300px;
+	}
+}
+@media only screen and (max-height: 1500px) {
+	[class^="parallax"] {
+		height: 1200px;
+	}
+}
+@media only screen and (max-height: 1400px) {
+	[class^="parallax"] {
+		height: 1100px;
+	}
+}
+@media only screen and (max-height: 1300px) {
+	[class^="parallax"] {
+		height: 1000px;
+	}
+}
+@media only screen and (max-height: 1200px) {
+	[class^="parallax"] {
+		height: 900px;
+	}
+}
+@media only screen and (max-height: 1100px) {
+	[class^="parallax"] {
+		height: 800px;
+	}
+}
+
+@media only screen and (max-height: 1000px) {
+	[class^="parallax"] {
+		height: 700px;
+	}
+}
+@media only screen and (max-height: 900px) {
+	[class^="parallax"] {
+		height: 600px;
+	}
+}
+@media only screen and (max-height: 800px) {
+	[class^="parallax"] {
+		height: 500px;
+	}
+}
+@media only screen and (max-height: 700px) {
+	[class^="parallax"] {
+		height: 400px;
+	}
+}
+@media only screen and (max-height: 600px) {
+	[class^="parallax"] {
+		height: 300px;
+	}
+}
+
+@media only screen and (max-height: 500px) {
+	[class^="parallax"] {
+		height: 200px;
+	}
 }

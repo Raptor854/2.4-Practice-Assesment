@@ -110,6 +110,28 @@ nav .nav_mobile a {
     text-decoration: none;
     font-size: 17px;
     display: block;
+	background-color: var(--block_bg_color);
+	margin: 0;
+}
+
+nav .nav_mobile #mobile_links a:first-of-type {
+	margin-top: 5px;
+}
+nav .nav_mobile #mobile_links a:hover {
+	color: var(--block_txt_color);
+	background-color: var(--block_alt_accent_color);
+}
+
+nav .nav_mobile #mobile_links {
+	position: absolute;
+	top: 48px;
+	width: 100%;
+	height: auto;
+	margin: 0;
+	background-color: var(--block_accent_color);
+}
+nav .nav_mobile a.icon:hover + #mobile_links {
+	background-color: var(--block_alt_accent_color);
 }
 
 nav .nav_mobile a.icon {

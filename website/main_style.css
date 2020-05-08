@@ -5,6 +5,7 @@
 	--block_bg_color: #52AACF;
 	--block_txt_color: #FFF;
 	--block_accent_color: #ccc;
+	--block_accent_color_light: #E5E5E5;
 	--block_alt_accent_color: #888;
 	--block_accent_txt_color: #52AACF;
 }
@@ -30,7 +31,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
     text-align: center;
     color: #111111;
-	font-weight: bold
+	font-weight: bold;
 }
 
 .main_content p {
@@ -41,12 +42,72 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 5px;
 }
 
+/*---- Tables ----*/
+
+table {
+	width: 95%;
+	margin: auto;
+	overflow: hidden;
+	display: block;
+}
+
+table tr {
+	width: 100%;
+}
+
+.table_results tr th, .table_results tr td {
+	width: 16%;
+	margin: 0;
+	padding: 5px 2%;
+	font-size: 12px;
+	text-align: center;
+	overflow: hidden;
+}
+
+.table_results tr th {
+	background-color: var(--block_accent_color);
+}
+
+.table_results tr td {
+	background-color: var(--block_accent_color_light);
+}
+
+/*---- Track Location ----*/
+
+.track_loaction {
+	display: block;
+	margin: 10px auto;
+	width: 95%;
+	height: 200px;
+}
+
+.track_loaction div {
+	display: inline-block;
+	height: 200px;
+	margin: 0;
+	padding: 0;
+}
+
+.track_loaction #location_0 {
+	width: 40%;
+	text-align: left;
+}
+
+.track_loaction #location_1 {
+	width: 60%;
+}
+.track_loaction #location_1 iframe {
+	width: 100%;
+	height: inherit;
+	display: block;
+}
+
 /*---- Parallax ----*/
 
 [class^="parallax"] {
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-attachment: scroll;
+	background-attachment: fixed;
 }
 
 .parallax_results {

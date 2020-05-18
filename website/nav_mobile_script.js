@@ -1,5 +1,4 @@
 // JavaScript Document
-
 function navMobile() {
 	var x = document.getElementById("mobile_links");
 	if (document.getElementById("wowslider-container0")) {

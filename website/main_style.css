@@ -9,43 +9,37 @@
 	--block_alt_accent_color: #888;
 	--block_accent_txt_color: #52AACF;
 }
-
 body {
-    width: 100%;
-    margin: auto;
+	width: 100%;
+	margin: auto;
 	background-color: #FFF;
 }
-
 /*---- Page Content ----*/
 
 .main_content {
-    margin: auto;
-    color: #111111;
-    font-family: 'Open Sans', sans-serif;
+	margin: auto;
+	color: #111111;
+	font-family: 'Open Sans', sans-serif;
 	font-size: medium;
-    text-align: justify;
-    padding-bottom: 0;
+	text-align: justify;
+	padding-bottom: 0;
 	min-height: 400px;
 }
-
 h1, h2, h3, h4, h5, h6 {
-    text-align: center;
-    color: #111111;
+	text-align: center;
+	color: #111111;
 	font-weight: bold;
 }
-
 .main_content p {
 	text-align: left;
 }
-
 .main_content img {
-    border-radius: 5px;
+	border-radius: 5px;
 	opacity: 0.9;
 }
 .main_content img:hover {
 	opacity: 1.0;
 }
-
 /*---- Tables ----*/
 
 table {
@@ -55,19 +49,17 @@ table {
 	border-collapse: collapse;
 	border: 1px solid #ddd;
 }
-
 th, td {
-  text-align: left;
-  padding: 8px;
+	text-align: left;
+	padding: 8px;
 }
-
 th {
 	color: var(--block_txt_color);
 	background-color: var(--block_bg_color);
 }
-
-tr:nth-child(even){background-color: #f2f2f2}
-
+tr:nth-child(even) {
+	background-color: #f2f2f2
+}
 /*---- Track Location ----*/
 
 .track_loaction {
@@ -76,19 +68,16 @@ tr:nth-child(even){background-color: #f2f2f2}
 	width: 95%;
 	height: 200px;
 }
-
 .track_loaction div {
 	display: inline-block;
 	height: 200px;
 	margin: 0;
 	padding: 0;
 }
-
 .track_loaction #location_0 {
 	width: 40%;
 	text-align: left;
 }
-
 .track_loaction #location_1 {
 	width: 60%;
 }
@@ -97,7 +86,6 @@ tr:nth-child(even){background-color: #f2f2f2}
 	height: inherit;
 	display: block;
 }
-
 /*---- Parallax ----*/
 
 [class^="parallax"] {
@@ -105,55 +93,46 @@ tr:nth-child(even){background-color: #f2f2f2}
 	background-size: cover;
 	background-attachment: fixed;
 }
-
 .parallax_results {
 	background-image: url("images/gallery/bmx_race_1.jpg");
 }
-
 .parallax_gallery {
 	background-image: url("images/gallery/bmx_race_corner_0.jpg");
 }
-
 .parallax_our_track {
 	background-image: url("images/gallery/rider_under_sign.jpg")
 }
-
 /*---- NavBar ----*/
 
 nav {
 	width: 100%;
 	display: block;
-	background-color:  var(--block_bg_color);
+	background-color: var(--block_bg_color);
 	color: var(--block_txt_color);
 	overflow: hidden;
 }
-
 nav a {
 	color: var(--block_txt_color);
 	text-decoration: none;
 }
-
 nav a:hover {
 	color: var(--block_txt_color);
 	background-color: var(--block_alt_accent_color);
 	text-decoration: none;
 }
-
 /*--- Desktop ---*/
 
 nav .nav_desktop {
 	height: 100px;
 }
-
 nav .nav_desktop img {
 	height: 70px;
 	margin: 20px 0 0 auto;
 }
-
 nav .nav_desktop a {
 	float: right;
 	padding: 15px 10px;
-    font-size: 20px;
+	font-size: 20px;
 	margin-top: 23.5px;
 	color: var(--block_accent_txt_color);
 	background-color: var(--block_accent_color);
@@ -163,35 +142,29 @@ nav .nav_desktop a:hover {
 	color: var(--block_txt_color);
 	background-color: var(--block_alt_accent_color);
 }
-
 nav .nav_desktop a:last-of-type {
 	border-radius: 8px 0 0 8px;
 }
-
 nav .nav_desktop a:first-of-type {
 	border-radius: 0 8px 8px 0;
 }
-
 /*--- Mobile ---*/
 
 nav .nav_mobile {
 	height: 48px;
 }
-
 nav .nav_mobile #mobile_links {
-    display: none;
+	display: none;
 }
-
 nav .nav_mobile a {
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+	display: block;
 	background-color: var(--block_bg_color);
 	margin: 0;
 	font-weight: bold;
 }
-
 nav .nav_mobile #mobile_links a:first-of-type {
 	margin-top: 5px;
 }
@@ -199,7 +172,6 @@ nav .nav_mobile #mobile_links a:hover {
 	color: var(--block_txt_color);
 	background-color: var(--block_alt_accent_color);
 }
-
 nav .nav_mobile #mobile_links {
 	position: absolute;
 	top: 48px;
@@ -208,15 +180,14 @@ nav .nav_mobile #mobile_links {
 	margin: 0;
 	background-color: var(--block_accent_color);
 }
-nav .nav_mobile a.icon:hover + #mobile_links {
+nav .nav_mobile a.icon:hover+#mobile_links {
 	background-color: var(--block_alt_accent_color);
 }
-
 nav .nav_mobile a.icon {
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
 	color: var(--block_accent_txt_color);
 	background-color: var(--block_accent_color);
 }
@@ -224,20 +195,17 @@ nav .nav_mobile a.icon:hover {
 	color: var(--block_txt_color);
 	background-color: var(--block_alt_accent_color);
 }
-
 nav .nav_mobile img {
-    height: 33px;
-    width: auto;
-    padding: 8px;
-    margin-left: 5px;
+	height: 33px;
+	width: auto;
+	padding: 8px;
+	margin-left: 5px;
 }
-
 .spacer {
 	display: block;
 	width: 100%;
 	height: 20px;
 }
-
 /*---- Footer ----*/
 
 footer {
@@ -247,7 +215,6 @@ footer {
 	display: block;
 	min-height: 100px;
 }
-
 footer a {
 	color: var(--block_txt_color);
 	font-weight: 550;
@@ -256,7 +223,6 @@ footer a {
 footer a:hover {
 	color: var(--block_accent_color)
 }
-
 footer .footer_content {
 	display: block;
 	margin: 0 auto;
@@ -264,7 +230,6 @@ footer .footer_content {
 	height: auto;
 	text-align: center;
 }
-
 .footer_content_container {
 	position: sticky;
 	width: 100%;
@@ -276,55 +241,50 @@ footer .footer_content {
 	color: var(--block_txt_color);
 	box-shadow: 0 -2px 2px 0 #bbb;
 }
-
 .footer_about {
 	height: 50px;
 	margin: auto;
 	padding: 10px 10px 10px;
 	border: 3px solid var(--block_accent_color);
 }
-
 .footer_about p {
 	margin: 0;
 	padding: 0;
 }
-
 .footer_about #facebook_logo {
 	float: right;
 	height: 35px;
 	padding: 7.5px 5px;
 }
-
 #facebook_logo {
 	-webkit-filter: invert(100%);
 	-o-filter: invert(100%);
 	filter: invert(100%);
 	-webkit-transition: all 500ms ease-in-out;
-    -moz-transition: all 500ms ease-in-out;
-    -ms-transition: all 500ms ease-in-out;
-    -o-transition: all 500ms ease-in-out;
-    transition: all 500ms ease-in-out;
+	-moz-transition: all 500ms ease-in-out;
+	-ms-transition: all 500ms ease-in-out;
+	-o-transition: all 500ms ease-in-out;
+	transition: all 500ms ease-in-out;
 }
-
 .footer_about #facebook_logo:hover {
 	-webkit-filter: invert(80%);
 	-o-filter: invert(80%);
 	filter: invert(80%);
-	
 }
-
 footer .footer_content .footer_nav_links {
 	width: 100%;
 	display: block;
 	margin: 0;
 	text-align: center;
 }
-
 /*---- Scaling ----*/
+
 /*--- Width ---*/
+
 /*-- Mobile --*/
+
 .main_content, .footer_content, .footer_about {
-    width: 90%;
+	width: 90%;
 }
 .nav_mobile {
 	display: block;
@@ -332,52 +292,47 @@ footer .footer_content .footer_nav_links {
 .nav_desktop {
 	display: none;
 }
-
 h1 {
-    font-size: 25px;
+	font-size: 25px;
 }
-
 /*-- Tablets --*/
-@media only screen and (min-width: 600px) {
-    .main_content, .footer_content, .footer_about {
-        width: 75%;
-    }
-}
 
+@media only screen and (min-width: 600px) {
+	.main_content, .footer_content, .footer_about {
+		width: 75%;
+	}
+}
 /*-- Laptop & Desktop --*/
+
 @media only screen and (min-width: 768px) {
-    .main_content, .footer_content, .footer_about {
-        width: 60%;
-    }
+	.main_content, .footer_content, .footer_about {
+		width: 60%;
+	}
 	h1 {
 		font-size: 35px;
 	}
 }
-
 @media only screen and (min-width: 900px) {
-    .nav_mobile {
-        display: none;
-    }
-    .nav_desktop {
-        display: block;
+	.nav_mobile {
+		display: none;
+	}
+	.nav_desktop {
+		display: block;
 		width: 60%;
 		margin-left: 20%;
-    }
-
+	}
 	/* 4k */
 	@media only screen and (max-height: 2160px) {
 		[class^="parallax"] {
 			height: 1860px;
 		}
 	}
-
 	/* 1440p */
 	@media only screen and (max-height: 1440px) {
 		[class^="parallax"] {
 			height: 1140px;
 		}
 	}
-
 	/* 1080p */
 	@media only screen and (max-height: 1080px) {
 		[class^="parallax"] {
@@ -385,7 +340,6 @@ h1 {
 		}
 	}
 }
-
 @media only screen and (max-height: 1600px) {
 	[class^="parallax"] {
 		height: 1300px;
@@ -416,7 +370,6 @@ h1 {
 		height: 800px;
 	}
 }
-
 @media only screen and (max-height: 1000px) {
 	[class^="parallax"] {
 		height: 700px;
@@ -442,7 +395,6 @@ h1 {
 		height: 300px;
 	}
 }
-
 @media only screen and (max-height: 500px) {
 	[class^="parallax"] {
 		height: 200px;

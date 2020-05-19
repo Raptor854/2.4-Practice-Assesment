@@ -2,12 +2,32 @@
 /* CSS Document */
 
 :root {
+	--block_bg_color: #239D8A;
+	--block_txt_color: #fff;
+	--block_accent_color: #27343F;
+	--block_accent_color_light: #4A6377;
+	--block_alt_accent_color: #A7E1B6;
+	--block_accent_txt_color: #fff;
+	
+	/* Palette A
+	
 	--block_bg_color: #52AACF;
 	--block_txt_color: #FFF;
 	--block_accent_color: #ccc;
 	--block_accent_color_light: #E5E5E5;
 	--block_alt_accent_color: #888;
 	--block_accent_txt_color: #52AACF;
+	*/
+	
+	/* Palette B
+	
+	--block_bg_color: #AC4036;
+	--block_txt_color: #FFF;
+	--block_accent_color: #C9C5B6;
+	--block_accent_color_light: #77766E;
+	--block_alt_accent_color: #8E8A72;
+	--block_accent_txt_color: #293131;
+	*/
 }
 
 body {
@@ -47,6 +67,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*---- Tables ----*/
+
+.table_container {
+	overflow-x: auto;
+}
 
 table {
 	width: 95%;
@@ -152,7 +176,7 @@ nav .nav_desktop img {
 
 nav .nav_desktop a {
 	float: right;
-	padding: 15px 10px;
+	padding: 15px 12px;
     font-size: 20px;
 	margin-top: 23.5px;
 	color: var(--block_accent_txt_color);
@@ -192,9 +216,6 @@ nav .nav_mobile a {
 	font-weight: bold;
 }
 
-nav .nav_mobile #mobile_links a:first-of-type {
-	margin-top: 5px;
-}
 nav .nav_mobile #mobile_links a:hover {
 	color: var(--block_txt_color);
 	background-color: var(--block_alt_accent_color);
@@ -204,11 +225,16 @@ nav .nav_mobile #mobile_links {
 	position: absolute;
 	top: 48px;
 	width: 100%;
-	height: auto;
 	margin: 0;
-	background-color: var(--block_accent_color);
+	overflow: hidden;
+	-webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -ms-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+	height: 0px;
 }
-nav .nav_mobile a.icon:hover + #mobile_links {
+nav .nav_mobile a.icon:hover + #nav_mobile_link_spacer {
 	background-color: var(--block_alt_accent_color);
 }
 
@@ -232,10 +258,21 @@ nav .nav_mobile img {
     margin-left: 5px;
 }
 
-.spacer {
+#nav_mobile_link_spacer {
 	display: block;
 	width: 100%;
-	height: 20px;
+	height: 5px;
+}
+
+#nav_spacer {
+	display: block;
+	width: 100%;
+	height: 0px;
+	-webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -ms-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
 }
 
 /*---- Footer ----*/
@@ -354,7 +391,7 @@ h1 {
 	}
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 950px) {
     .nav_mobile {
         display: none;
     }

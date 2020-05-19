@@ -2,6 +2,8 @@
 /* CSS Document */
 
 :root {
+	/* Palette A */
+	
 	--block_bg_color: #239D8A;
 	--block_txt_color: #fff;
 	--block_accent_color: #27343F;
@@ -9,7 +11,7 @@
 	--block_alt_accent_color: #A7E1B6;
 	--block_accent_txt_color: #fff;
 	
-	/* Palette A
+	/* Palette B
 	
 	--block_bg_color: #52AACF;
 	--block_txt_color: #FFF;
@@ -19,7 +21,7 @@
 	--block_accent_txt_color: #52AACF;
 	*/
 	
-	/* Palette B
+	/* Palette C
 	
 	--block_bg_color: #AC4036;
 	--block_txt_color: #FFF;
@@ -336,17 +338,17 @@ footer .footer_content {
 	-webkit-filter: invert(100%);
 	-o-filter: invert(100%);
 	filter: invert(100%);
-	-webkit-transition: all 500ms ease-in-out;
-    -moz-transition: all 500ms ease-in-out;
-    -ms-transition: all 500ms ease-in-out;
-    -o-transition: all 500ms ease-in-out;
-    transition: all 500ms ease-in-out;
+	-webkit-transition: all 650ms ease-in-out;
+    -moz-transition: all 650ms ease-in-out;
+    -ms-transition: all 650ms ease-in-out;
+    -o-transition: all 650ms ease-in-out;
+    transition: all 650ms ease-in-out;
 }
 
 .footer_about #facebook_logo:hover {
-	-webkit-filter: invert(80%);
-	-o-filter: invert(80%);
-	filter: invert(80%);
+	-webkit-filter: invert(0%);
+	-o-filter: invert(0%);
+	filter: invert(0%);
 	
 }
 

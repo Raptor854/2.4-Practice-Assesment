@@ -1,17 +1,7 @@
 // JavaScript Document
 
 function navMobile() {
-	var x = document.getElementById("mobile_links");
-	/*
-	if (document.getElementById("wowslider-container0")) {
-		var y = document.getElementById("wowslider-container0")
-		if (x.style.display === "block") {
-			y.style.display = "block";
-		} else {
-			y.style.display = "none";
-		}
-	}*/
-	
+	var x = document.getElementById("mobile_links");	
 	var z = document.getElementById("nav_spacer");
 	if (x.style.height === '197px') {
 		x.style.height = '0px';

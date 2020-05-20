@@ -10,6 +10,7 @@
 	--block_accent_color_light: #4A6377;
 	--block_alt_accent_color: #A7E1B6;
 	--block_accent_txt_color: #fff;
+	--nav_active_tag: #155B50;
 	
 	/* Palette B
 	
@@ -178,24 +179,21 @@ nav .nav_desktop img {
 
 nav .nav_desktop a {
 	float: right;
-	padding: 15px 12px;
-    font-size: 20px;
-	margin-top: 23.5px;
+	padding: 10px 12px;
+    font-size: 18px;
+	margin-top: 59px;
 	color: var(--block_accent_txt_color);
-	background-color: var(--block_accent_color);
+	/*background-color: var(--block_accent_color);*/
 	font-weight: bold;
 }
+
+nav .nav_desktop a.active {
+	background-color: var(--nav_active_tag);
+}
+
 nav .nav_desktop a:hover {
 	color: var(--block_txt_color);
 	background-color: var(--block_alt_accent_color);
-}
-
-nav .nav_desktop a:last-of-type {
-	border-radius: 8px 0 0 8px;
-}
-
-nav .nav_desktop a:first-of-type {
-	border-radius: 0 8px 8px 0;
 }
 
 /*--- Mobile ---*/
@@ -393,7 +391,7 @@ h1 {
 	}
 }
 
-@media only screen and (min-width: 950px) {
+@media only screen and (min-width: 960px) {
     .nav_mobile {
         display: none;
     }

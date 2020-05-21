@@ -183,11 +183,9 @@ nav .nav_desktop a:last-of-type {border-radius: 4px 0 0 0;}
 
 nav .nav_desktop a {
 	float: right;
-	padding: 10px 12px;
+	padding: 39.545px 12px;
     font-size: 18px;
-	margin-top: 59px;
 	color: var(--block_accent_txt_color);
-	background-color: var(--block_accent_color);
 	font-weight: bold;
 }
 

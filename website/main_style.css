@@ -300,6 +300,12 @@ footer .footer_content {
 	text-align: center;
 }
 
+.spacer {
+	display: block;
+	height: 30px;
+	width: 100%;
+}
+
 .footer_content_container {
 	position: sticky;
 	width: 100%;

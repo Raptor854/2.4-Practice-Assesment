@@ -63,7 +63,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .main_content img {
-    border-radius: 5px;
 	opacity: 0.9;
 }
 .main_content img:hover {
@@ -177,9 +176,6 @@ nav .nav_desktop img {
 	height: 70px;
 	margin: 20px 0 0 auto;
 }
-
-nav .nav_desktop a:first-of-type {border-radius: 0 4px 0 0;}
-nav .nav_desktop a:last-of-type {border-radius: 4px 0 0 0;}
 
 nav .nav_desktop a {
 	float: right;
